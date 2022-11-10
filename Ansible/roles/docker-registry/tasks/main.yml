@@ -1,2 +1,7 @@
 ---
 # tasks file for docker-registry
+ 
+   - name : adding tag to image 
+     command : docker tag devops:latest zeroxcharisma/devops:latest
+   - name : push image to dockerhub 
+     command : docker push zeroxcharisma/devops:latest
