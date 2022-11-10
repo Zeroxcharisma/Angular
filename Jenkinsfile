@@ -23,7 +23,7 @@ pipeline {
                 script{
                     sh "ansible-playbook Ansible/docker.yml -i Ansible/inventory/host.yml"
                 }}}
-      stage('Build 2 ') {
+      stage('Build 3 ') {
             steps {
                 script{
                     sh "ansible-playbook Ansible/docker-registry.yml -i Ansible/inventory/host.yml"
