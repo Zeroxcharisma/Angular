@@ -1,7 +1,6 @@
 pipeline {
     agent any
-  tools { nodejs 'node'
-  }
+
     stages {
         stage('Gut hub pull stage ') {
             steps {
