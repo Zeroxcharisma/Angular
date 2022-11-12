@@ -16,6 +16,7 @@ pipeline {
       stage('Build 1 ') {
             steps {
                 script{
+                    sh " npm install " 
                     sh "ansible-playbook Ansible/build.yml -i Ansible/inventory/host.yml -e ansible_become_password=root -v"
                 }}}
       stage('Build 2 ') {
